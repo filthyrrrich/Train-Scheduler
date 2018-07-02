@@ -1,0 +1,55 @@
+
+.container{
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    text-align: center;
+} 
+
+#front {
+    width: 100px;
+    height: 70px;
+}
+.form-group {
+    font-size: 20px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+label {
+    margin: 10px 0;
+}
+    
+.btn-success {
+    margin: 10px 0px;
+}
+
+.d-flex{
+    margin-top: 3px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    background: #a1c87a;
+}
+th {
+    font-weight: bold;
+    font-size: 20px;
+    background: #e9ecef;
+}
+       
