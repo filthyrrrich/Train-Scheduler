@@ -1,3 +1,31 @@
+body {
+    background-image: url("https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/170048.jpg");
+    background-position: center;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    background: #a1c87a7e;
+}
+
+footer {
+    margin-top:10px;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    color: white;
+    background: rgba(128, 128, 128, 0.543);
+    border-top: solid 2px rgba(223, 219, 219, 0.845);
+    padding: 12px;
+}
 
 .container{
     margin-top: 10px;
@@ -7,6 +35,7 @@
 }
 
 .jumbotron {
+    background: none;
     margin-bottom: 0;
     margin-top: 10px;
     padding: 20px;
@@ -14,17 +43,46 @@
     text-align: center;
 } 
 
-#front {
-    width: 100px;
-    height: 70px;
+tbody {
+    background: rgba(128, 128, 128, 0.269);
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(8, 8, 8);
+    color: white;
+    font-size: 20px;
 }
+
+th {
+    font-weight: bold;
+    font-size: 20px;
+    background: #e9ecef85;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+form {
+    background: rgba(128, 128, 128, 0.269);
+}
+
+.form-control {
+    background: rgba(223, 222, 222, 0.769);
+}
+
 .form-group {
+    text-shadow: 1px 1px black;
+    color: white;
     font-size: 20px;
     width: 96%;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
 }
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
 label {
     margin: 10px 0;
 }
@@ -33,23 +91,9 @@ label {
     margin: 10px 0px;
 }
 
-.d-flex{
-    margin-top: 3px;
-}
 
-h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-h2 {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 5px;
-    border-bottom: 2px solid black;
-    background: #a1c87a;
-}
-th {
-    font-weight: bold;
-    font-size: 20px;
-    background: #e9ecef;
-}
-       
+
+
+
+
+
