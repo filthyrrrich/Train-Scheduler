@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyAYkzAH0KMhtjxC0Dhwkq3GXlaPiXu31EE",
@@ -15,25 +17,27 @@ var ref = database.ref("trains");
 
 
 //onclick button to add trains
-$(document).on("click", ".btn-success", function () {
+$(".btn-success").click(function () {
 
-var name = $("#name").val().trim();
-var destination = $("#destination").val().trim();
-var time = $("#time").val().trim();
-var frequency = $("#frequency").val().trim(); 
+    var name = $("#name").val().trim();
+    var destination = $("#destination").val().trim();
+    var time = $("#time").val().trim();
+    var frequency = $("#frequency").val().trim(); 
 
-    //stops creation of unfilled-out trains
-    if (!(name && destination && time && frequency)) {
-        alert("You must completely fill out the form to Add Train.")
-    } else {
-        //pushes inputs to firebase
-        ref.push ({
-            name: ($("#name").val().trim()),
-            destination: ($("#destination").val().trim()),
-            time: ($("#time").val().trim()),
-            frequency: ($("#frequency").val().trim()) 
-        });
-    }
+        //stops creation of unfilled-out trains
+        if (!(name && destination && time && frequency)) {
+            alert("You must completely fill out the form to Add Train.")
+        } else {
+            //pushes inputs to firebase
+            ref.push ({
+                name: ($("#name").val().trim()),
+                destination: ($("#destination").val().trim()),
+                time: ($("#time").val().trim()),
+                frequency: ($("#frequency").val().trim()) 
+            });
+        }
+        //clears train inputs after added
+        $("input").val("");
 });
 
 //grabs values from firebase
@@ -66,5 +70,5 @@ ref.on("child_added", function(childSnapshot) {
     tMins.append(tMinsTillTrain);
     entry.append(tName, tDest, tFreq, tAriv, tMins);
     $("tbody").append(entry);
-
   });
+})
