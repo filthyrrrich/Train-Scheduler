@@ -1,23 +1,20 @@
 # Train-Scheduler
 
-Conclusion:
+An app that allows the user to create and view train schedules. 
 
+### Built with
+* HTML5
+* CSS3
+* jQuery
+* Firebase
+* Bootstrap
 
-Overall this assignment was not too difficult to complete... thanks the the classwork activities(employee Sheet). Having not worked with databases at all, it was a challenge at first, but I was quickly able to grasp the concepts of firebase. I would have liked to have spent more time on this assignment, but because of the importance of our first projects, I finished this ASAP to devote my time towards that. Overall I put about 5hrs into this assignment.
+## How to Use:
 
+The user enters the desired train name, it's frequency, and it's destination. The information is stored in Firebase and the time is then calculated and updated to display the trains estimated time of arrival.
 
+#### Use 
 
-
-Pseudo Code:
-
-Create basic HTML/CSS.
-
-Setup and initialize the firebase.
-
-Creat onclick function to add trains with their schedules.
-    Create firebase ref to store the info in the database.
-    Retreive database values and display on website.
-
-Use momemt to create the time values and display on website.
+This app is a good introduction to the front end database, Firebase.
 
     
